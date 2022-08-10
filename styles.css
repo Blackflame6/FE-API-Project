@@ -11,7 +11,7 @@ body {
  margin: 0.5rem;
 }
 #container {
-  
+
   background-color: aliceblue;
   border: 5px red solid;
   height: 45rem;
@@ -19,13 +19,13 @@ body {
   margin: auto;
   padding: 5rem;
 }
-.standings {
+#standings {
   background-color: #555;
   height: 40rem;
   
 
 }
-.btn {
+#btn {
   border-radius: 20px;
   border: none;
   padding: 0.5rem 1rem;
