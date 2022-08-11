@@ -10,6 +10,7 @@ function getInfo() {
 button.addEventListener('click', getStandings)
 
 
+
 }
 function getStandings() {
   $.get('https://api-football-standings.azharimm.site/leagues', logStandings)
@@ -60,14 +61,14 @@ function getTeam (e) {
     console.log(data)
    accessTeam(data)
    $(standings).hide()
-   $(gamestandings).show
+   
    
   }) 
    
 }
 function accessTeam(data) {
   for(let key in data) {
-    const teamKey = data[key]
+    const teamKey = data.slug
     console.log(teamKey)
    makeDiv(teamKey)
   }
