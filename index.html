@@ -5,26 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
   <link rel="stylesheet" href="./styles.css">
-  <script 
-  src="https://code.jquery.com/jquery-3.6.0.min.js" 
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
-  crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" 
+  integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer">
 
 </script>
 </head>
 <body>
+  
   <div id="container">
-    <h1 class="header">CURRENT FOOTBALL STANDINGS</h1>
-    <div id="standings">
+    <p class="heading">FRIDAY SPORTS BROADCAST</p>
+    <h1  class="header">PLEASE SELECT LEAGUE</h1>
+    <div class="animate__animated animate__zoomIn"  id="standings">
       
     </div>
-    <div id="gamestandings">
-
+    <div class="animate__animated animate__zoomInUp" id="gamestandings">
+      
     </div>
-    
+    <section>
+      <marquee behavior="autem" scrollamount="25" >
+        <marquee behavior="alternate" direction="down" scrollamount="10">
+          <img src="./images/football-no-background.png" class="ball" alt="">
+        </marquee>
+        
+      </marquee>
+    </section>
     
     <button id="btn" class="btn">View standings</button>
+    
   </div>
   <script src="./main.js"></script>
 </body>

@@ -1,59 +1,176 @@
 body {
-  background: url(./images/Soccer-Wallpaper-14-1920x1080.jpg);
+  background: url(./images/Tottenham-hotspur-stadium-hero-1504x846.jpg)no-repeat;
   background-size: cover;
   margin: auto;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Orbitron', sans-serif;
+  overflow: hidden;
 }
+
+marquee {
+  height: 2rem;
+}
+
+
+
+.ball {
+  width: 4rem;
+  height: 4rem;
+  animation: animate 1s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+
+  }
+  30% {
+    transform: rotate(360deg);
+  }
+  
+}
+
 .header {
+
   font-size: 2rem;
   text-align: center;
   border-bottom: 1px #555 solid;
  margin: 0.5rem;
+ color: rgb(121, 67, 67);
+ 
 }
 #container {
 
   background-color: aliceblue;
   border: 5px red solid;
-  height: 45rem;
-  width: 40rem;
+  height: 50rem;
+  width: 45rem;
   margin: auto;
-  padding: 5rem;
+  padding: 4rem ;
+  padding-top: 0;
   overflow: hidden;
+  padding-bottom: 7rem;
+  
+  
+  
+  
 }
 #standings {
-  background-color: #eee;
-  height: 40rem;
+  background-color: #ddd;
+  height: 42rem;
   overflow: hidden;
+  cursor: pointer;
+  border-left: 0.1rem #333 solid;
+  border-right:0.1rem #333 solid;
+  border-top:0.1rem #333 solid ;
+  border-radius: 30px;
+  box-shadow: 0 0 30px 1px #bbb;
   
-  
-
-
 }
 
 .teamDiv {
   padding: 0.4rem;
   transition: 0.2s;
   padding-left: 1rem;
+  height: auto;
+  
+}
+.teamDiv:nth-child(odd) {
+  background-color:rgb(181, 188, 172);
+  
 }
 .teamDiv:hover {
   transform: scale(1.05);
+  background: rgba(61, 60, 60, 0.411);
+  color: wheat;
+
 }
-#btn {
+#btn  {
   border-radius: 20px;
-  border: none;
+  border: 1PX #333 solid;
   padding: 0.5rem 1rem;
-  color: black;
+  color: #fff;
   font-size: 1rem;
   margin: auto;
   cursor: pointer;
   background-color: rgb(79, 193, 79);
-  margin: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-self: center;
 }
+.heading {
+  text-align: center;
+  
+}
+#btn2 {
+  border-radius: 20px;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #000;
+  font-size: 1rem;
+  margin: auto;
+  cursor: pointer;
+  background-color: rgb(79, 193, 79);
+  margin-bottom: 200rem;
+  align-items: center;
 
+}
 #gamestandings {
-  background-color: aqua;
-  height:fit-content;
+ 
+ margin-top: 1rem;
+  /* border: 0.25rem #333 solid; */
   overflow: hidden;
+  border-radius: 30px;
+
+
   
 
 }
+.gameDiv {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgb(65, 214, 107);
+}
+
+
+@media screen and (max-width: 1400px) {
+ 
+  #container {
+    width:40rem;
+  }
+
+ }
+@media screen and (max-width: 1300px) {
+ 
+  #container {
+    width:38rem;
+  }
+
+ }
+@media screen and (max-width: 1200px) {
+ 
+  #container {
+    width:35rem;
+  }
+
+ }
+@media screen and (max-width: 1000px) {
+ 
+  #container {
+    width:33rem;
+  }
+
+ }
+@media screen and (max-width: 900px) {
+ 
+  #container {
+    width:30rem;
+  }
+
+ }
+@media screen and (max-width: 800px) {
+ 
+  #container {
+    width:25rem;
+  }
+
+ }
